@@ -3,62 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💖 Para Mi Amor Antonio 🐻💋</title>
+<title>💖 Sindy 💕 Antonio 💖</title>
 <style>
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: radial-gradient(circle at top, #ffe6f0, #ffd6e8);
-    color: #ff2b70;
-    text-align: center;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #ffe6f0, #ffd6e8);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  overflow: hidden;
+  color: #ff2b70;
 }
 
-/* Encabezado */
+/* Título con brillo */
 h1 {
-    font-size: 3.2rem;
-    margin-top: 40px;
-    text-shadow: 3px 3px #ffc4d6;
-    animation: heartbeat 1.5s infinite;
+  font-size: 3.2rem;
+  margin-top: 40px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff80b0, 0 0 30px #ff2b70;
+  animation: glow 2s ease-in-out infinite alternate;
 }
-@keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #ff80b0, 0 0 20px #ff2b70; }
+  to { text-shadow: 0 0 20px #fff, 0 0 40px #ff2b70, 0 0 60px #ff4da6; }
 }
 
-/* Subtítulo */
 h2 {
-    font-weight: normal;
-    font-size: 1.4rem;
-    color: #ff4da6;
-    margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #ff4da6;
+  margin-bottom: 10px;
 }
 
-/* Botón */
+/* Botón de música */
 #playButton {
-    background-color: #ff4da6;
-    color: white;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(255, 0, 100, 0.3);
-    margin-top: 20px;
-    transition: 0.3s;
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 0, 100, 0.3);
+  margin-top: 20px;
+  transition: 0.3s;
 }
 #playButton:hover {
-    transform: scale(1.1);
-    background-color: #ff66b2;
+  transform: scale(1.1);
+  background-color: #ff66b2;
 }
 
 /* Osito */
-.bear { position: relative; width: 160px; height: 160px; background: #d2a679; border-radius: 50%; margin: 40px auto 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.bear {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: #d2a679;
+  border-radius: 50%;
+  margin: 40px auto 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 .ear { position: absolute; width: 55px; height: 55px; background: #d2a679; border-radius: 50%; top: -25px; }
-.ear.left { left: -20px; } .ear.right { right: -20px; }
+.ear.left { left: -20px; } 
+.ear.right { right: -20px; }
 .eye { position: absolute; width: 20px; height: 20px; background: #000; border-radius: 50%; top: 50px; }
-.eye.left { left: 45px; } .eye.right { right: 45px; }
+.eye.left { left: 45px; } 
+.eye.right { right: 45px; }
 .nose { position: absolute; width: 25px; height: 20px; background: #000; border-radius: 50%; top: 85px; left: 50%; transform: translateX(-50%); }
 .mouth { position: absolute; width: 45px; height: 20px; border-bottom: 3px solid #ff0066; border-radius: 0 0 50% 50%; top: 100px; left: 50%; transform: translateX(-50%); animation: blowkiss 2s infinite; }
 .kiss { position: absolute; width: 20px; height: 20px; background: #ff4da6; border-radius: 50%; top: 95px; left: 50%; transform: translateX(-50%); opacity: 0; animation: flykiss 2s infinite; }
@@ -73,7 +82,7 @@ h2 {
   50% { transform: translateX(-50%) rotate(-20deg); }
 }
 
-/* Corazones flotando */
+/* Corazones flotantes */
 .heart {
   position: absolute;
   width: 25px;
@@ -98,31 +107,72 @@ h2 {
   100% { transform: translateY(-100px) rotate(45deg) scale(1.2); opacity: 0; }
 }
 
-/* Frases románticas */
+/* Mensaje de amor */
 .message {
-    max-width: 500px;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    color: #c91e61;
-    line-height: 1.6;
-    animation: fadeIn 3s;
+  max-width: 520px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #c91e61;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 3s;
 }
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nombres flotantes */
+.names {
+  position: fixed;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff66a3;
+  text-shadow: 0 0 15px #fff, 0 0 25px #ff80c0;
+  animation: floatNames 8s ease-in-out infinite alternate;
+}
+@keyframes floatNames {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Texto que se escribe */
+#typewriter {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #ff0066;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff80b0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ff0066;
+  width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  animation: typing 5s steps(50, end) forwards, blink 0.7s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 18ch; }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #ff0066; }
 }
 
 /* Audio oculto */
-#audioLove {
-    display: none;
-}
+#audioLove { display: none; }
 </style>
 </head>
 <body>
+
+<div class="names">💞 Sindy 💕 Antonio 💞</div>
 
 <h1>💖 Te Amo Antonio 💖</h1>
 <h2>Mi osito hermoso, esta página es para ti 🐻✨</h2>
@@ -140,36 +190,46 @@ h2 {
 <div class="message">
   <p>Desde que llegaste, mi mundo se llenó de color, de risas y de amor 💞</p>
   <p>Gracias por ser mi compañero, mi refugio y mi alegría cada día 💕</p>
-  <p>Este osito y esta música son solo una forma de decirte: te amo con todo mi corazón 💋</p>
+  <p>Este osito, esta música y esta página son mi manera de decirte:  
+  <strong>te amo con todo mi corazón 💋</strong></p>
 </div>
 
 <button id="playButton">🎶 Reproducir nuestra canción 💞</button>
 
-<!-- Música de fondo (romántica instrumental libre) -->
+<!-- Música romántica -->
 <audio id="audioLove" loop>
   <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4e4b1986b4.mp3?filename=romantic-love-story-11295.mp3" type="audio/mpeg">
   Tu navegador no soporta el audio.
 </audio>
+
+<!-- Texto final tipo máquina de escribir -->
+<div id="typewriter"></div>
 
 <script>
 const playButton = document.getElementById('playButton');
 const audioLove = document.getElementById('audioLove');
 const bear = document.querySelector('.bear');
 const kiss = document.querySelector('.kiss');
+const typewriter = document.getElementById('typewriter');
 
 playButton.addEventListener('click', () => {
-    audioLove.play();
-    playButton.style.display = 'none';
+  audioLove.play();
+  playButton.style.display = 'none';
+
+  // Mostrar texto tipo máquina de escribir
+  setTimeout(() => {
+    typewriter.textContent = "Siempre serás mi razón de sonreír 💕";
+  }, 2000);
 });
 
-// Animación besos
+// Besitos animados
 setInterval(() => {
-    const newKiss = kiss.cloneNode(true);
-    bear.appendChild(newKiss);
-    setTimeout(() => newKiss.remove(), 2000);
+  const newKiss = kiss.cloneNode(true);
+  bear.appendChild(newKiss);
+  setTimeout(() => newKiss.remove(), 2000);
 }, 1000);
 
-// Corazones flotando
+// Corazones flotantes
 function createHeart() {
   const heart = document.createElement('div');
   heart.className = 'heart';
